@@ -4,13 +4,13 @@
         <div class="card bg-light">
             <div class="card-header"><%=post.title %></div>
             <div class="card-body">
-            
-            <p class="card-text"><%=post.content.substring(0,300)%> 
-                
+
+            <p class="card-text"><%=post.content.substring(0,300)%>
+
                 <% if(post.content.length >= 300){ %>
                      <a href="/post/open/<%=post.id%>">Read more..</a> <% } else { %>
-                        <a href="/post/open/<%=post.id%>">READ..</a>
-                     <% } %> 
+                        <a href="/post/open/<%=post.id%>">Read more</a>
+                     <% } %>
             </div>
 
             <div class="card-footer text-muted">
